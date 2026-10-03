@@ -1,0 +1,168 @@
+{
+  "seed": 42,
+  "split": "stratified random 75/25 holdout",
+  "train_rows_before_smote": 450,
+  "train_rows_after_smote": 722,
+  "test_rows": 150,
+  "smote": true,
+  "epochs": 10,
+  "labels": [
+    "0",
+    "1"
+  ],
+  "test_index_sha256": "72865b294821aa47c69da248f41488a29450e2037506d6df0c956de197c7fa0a",
+  "models": {
+    "decision_tree": {
+      "report": {
+        "0": {
+          "precision": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9333333333333333,
+          "support": 120.0
+        },
+        "1": {
+          "precision": 0.7333333333333333,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.7333333333333333,
+          "support": 30.0
+        },
+        "accuracy": 0.8933333333333333,
+        "macro avg": {
+          "precision": 0.8333333333333333,
+          "recall": 0.8333333333333333,
+          "f1-score": 0.8333333333333333,
+          "support": 150.0
+        },
+        "weighted avg": {
+          "precision": 0.8933333333333333,
+          "recall": 0.8933333333333333,
+          "f1-score": 0.8933333333333333,
+          "support": 150.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          112,
+          8
+        ],
+        [
+          8,
+          22
+        ]
+      ],
+      "warnings": []
+    },
+    "logistic_regression": {
+      "report": {
+        "0": {
+          "precision": 0.9519230769230769,
+          "recall": 0.825,
+          "f1-score": 0.8839285714285714,
+          "support": 120.0
+        },
+        "1": {
+          "precision": 0.5434782608695652,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.6578947368421053,
+          "support": 30.0
+        },
+        "accuracy": 0.8266666666666667,
+        "macro avg": {
+          "precision": 0.747700668896321,
+          "recall": 0.8291666666666666,
+          "f1-score": 0.7709116541353384,
+          "support": 150.0
+        },
+        "weighted avg": {
+          "precision": 0.8702341137123746,
+          "recall": 0.8266666666666667,
+          "f1-score": 0.8387218045112782,
+          "support": 150.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          99,
+          21
+        ],
+        [
+          5,
+          25
+        ]
+      ],
+      "warnings": []
+    },
+    "pytorch_mlp": {
+      "report": {
+        "0": {
+          "precision": 0.9351851851851852,
+          "recall": 0.8416666666666667,
+          "f1-score": 0.8859649122807017,
+          "support": 120.0
+        },
+        "1": {
+          "precision": 0.5476190476190477,
+          "recall": 0.7666666666666667,
+          "f1-score": 0.6388888888888888,
+          "support": 30.0
+        },
+        "accuracy": 0.8266666666666667,
+        "macro avg": {
+          "precision": 0.7414021164021165,
+          "recall": 0.8041666666666667,
+          "f1-score": 0.7624269005847952,
+          "support": 150.0
+        },
+        "weighted avg": {
+          "precision": 0.8576719576719578,
+          "recall": 0.8266666666666667,
+          "f1-score": 0.8365497076023392,
+          "support": 150.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          101,
+          19
+        ],
+        [
+          7,
+          23
+        ]
+      ],
+      "warnings": []
+    }
+  },
+  "pytorch_training_loss": [
+    0.6791864549354173,
+    0.6579523321003795,
+    0.6374339499301858,
+    0.6177082357314154,
+    0.5975916776960907,
+    0.5771979481559711,
+    0.5553020311524663,
+    0.5327416042541864,
+    0.5090757487883528,
+    0.48537104570634476
+  ],
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.3"
+  },
+  "data_source": "synthetic_smoke_test",
+  "features": [
+    "synthetic_0",
+    "synthetic_1",
+    "synthetic_2",
+    "synthetic_3",
+    "synthetic_4",
+    "synthetic_5",
+    "synthetic_6",
+    "synthetic_7",
+    "synthetic_8",
+    "synthetic_9"
+  ],
+  "duplicate_rows_removed": 0,
+  "input_sha256": null,
+  "original_source_recovered": false
+}
