@@ -1,0 +1,6 @@
+numpy>=1.25.2,<3
+pandas>=2,<3
+scikit-learn==1.7.2
+imbalanced-learn==0.14.0
+torch>=2.6,<3
+pytest>=8,<10
